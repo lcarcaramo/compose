@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+  java:
+    image: quay.io/ibmz/openjdk:11.0.8
+    command: java --version
