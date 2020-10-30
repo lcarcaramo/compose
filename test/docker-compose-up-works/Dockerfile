@@ -1,4 +1,4 @@
-FROM quay.io/ibmz/compose:1.27.3
+FROM quay.io/ibmz/compose:1.27.4
 
 COPY docker-compose.yml .
 
