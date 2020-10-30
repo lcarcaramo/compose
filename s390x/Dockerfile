@@ -2,8 +2,6 @@ ARG DOCKER_VERSION=18.06.3-ce
 ARG PYTHON_VERSION=3.9
 ARG RUNTIME_ALPINE_VERSION=3.12
 
-ARG BUILD_PLATFORM=alpine
-
 FROM quay.io/ibmz/docker:${DOCKER_VERSION} AS docker-cli
 
 FROM quay.io/ibmz/python:${PYTHON_VERSION} AS build
