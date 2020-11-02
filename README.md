@@ -51,4 +51,4 @@ Installation and documentation
 
 License
 -------
-Compose is licensed under the Apache 2.0 license. See more details __[here](https://github.com/docker/compose/blob/master/LICENSE)__
+Compose is licensed under the __Apache 2.0__ license. See more details __[here](https://github.com/docker/compose/blob/master/LICENSE)__
