@@ -50,7 +50,7 @@ suite_end () {
 suite_start
         print_test_case "It can run a container using Docker Compose:"
                 build "docker-compose-up-works" 
-                docker run --rm --name docker-compose-up-works "docker-compose-up-works"
+                docker run --rm --name docker-compose-up-works -v /var/run/docker.sock:/var/run/docker.sock:ro "docker-compose-up-works"
                 print_success "Success! A quay.io/ibmz/openjdk:11.0.8 container was run using the quay.io/ibmz/compose:1.27.3 image."
                 cleanup "docker-compose-up-works"
 suite_end
