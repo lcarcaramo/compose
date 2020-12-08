@@ -1,8 +1,10 @@
 # Tags
-> _Built from [`quay.io/ibmz/alpine:3.12`](https://quay.io/repository/ibmz/alpine?tab=info)_
--	[`1.27.4`](https://github.com/lcarcaramo/compose/blob/1.27.x/Dockerfile) - [![Build Status](https://travis-ci.com/lcarcaramo/compose.svg?branch=master)](https://travis-ci.com/lcarcaramo/compose)
+> _Built from [`quay.io/ibm/alpine:3.12`](https://quay.io/repository/ibm/alpine?tab=info)_
+-	`1.27.4` - [![Build Status](https://travis-ci.com/lcarcaramo/compose.svg?branch=master)](https://travis-ci.com/lcarcaramo/compose)
 
-# What is Docker Compose
+### __[Original Source Code](https://github.com/docker/compose)__
+
+# Docker Compose
 
 ![Docker Compose](logo.png?raw=true "Docker Compose Logo")
 
@@ -24,12 +26,12 @@ version: '2'
 
 services:
   java:
-    image: quay.io/ibmz/openjdk:11.0.8
+    image: quay.io/ibm/openjdk:11.0.8
     command: java --version
 ```
 2. Create a `Dockerfile` that builds an image that contains your `docker-compose.yml` file, and other resources required for the containers specified in `docker-compose.yml`.
 ```
-FROM quay.io/ibmz/compose:1.27.4
+FROM quay.io/ibm/compose:1.27.4
 
 COPY docker-compose.yml /home/
 
@@ -49,4 +51,4 @@ CMD ["docker-compose", "up"]
 
 # License 
 
-Compose is licensed under the __Apache 2.0__ license. See more details __[here](https://github.com/docker/compose/blob/master/LICENSE)__
+Compose is licensed under the __Apache 2.0__ license. See more details [here](https://github.com/docker/compose/blob/master/LICENSE)
